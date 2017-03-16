@@ -19,6 +19,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class DefaultController extends Controller
 {
     /**
+     * @SWG\Get(
+     *     path="/default",
+     *     @SWG\Response(
+     *         response="200", description="Returns test data",
+     *     )
+     * )
+     *
      * @Get("/")
      * @View()
      *
@@ -34,6 +41,13 @@ class DefaultController extends Controller
     }
 
     /**
+     * * @SWG\Get(
+     *     path="/default",
+     *     @SWG\Response(
+     *         response="200", description="Returns test data",
+     *     )
+     * )
+     *
      * @Get("/{id}", requirements={"id" = "\d+"})
      * @View()
      *

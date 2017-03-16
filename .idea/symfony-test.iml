@@ -73,6 +73,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/willdurand/jsonp-callback-validator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/willdurand/negotiation" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zircote/swagger-php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -142,6 +143,7 @@
           <root url="file://$MODULE_DIR$/vendor/twig/twig" />
           <root url="file://$MODULE_DIR$/vendor/willdurand/jsonp-callback-validator" />
           <root url="file://$MODULE_DIR$/vendor/willdurand/negotiation" />
+          <root url="file://$MODULE_DIR$/vendor/zircote/swagger-php" />
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/composer" />
@@ -187,6 +189,7 @@
           <root url="file://$MODULE_DIR$/vendor/twig/twig" />
           <root url="file://$MODULE_DIR$/vendor/willdurand/jsonp-callback-validator" />
           <root url="file://$MODULE_DIR$/vendor/willdurand/negotiation" />
+          <root url="file://$MODULE_DIR$/vendor/zircote/swagger-php" />
         </SOURCES>
       </library>
     </orderEntry>
