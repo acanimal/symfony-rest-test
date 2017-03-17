@@ -21,6 +21,9 @@ class DefaultController extends Controller
     /**
      * @SWG\Get(
      *     path="/default",
+     *     description="Returns test data",
+     *     tags={"query"},
+     *     produces={"application/json"},
      *     @SWG\Response(
      *         response="200", description="Returns test data",
      *     )
@@ -41,10 +44,26 @@ class DefaultController extends Controller
     }
 
     /**
-     * * @SWG\Get(
-     *     path="/default",
+     * @SWG\Get(
+     *     path="/default{id}",
+     *     description="Returns test data",
+     *     tags={"query"},
+     *     produces={"application/json"},
+     *     @SWG\Parameter(
+     *         description="ID of the thing",
+     *         in="path",
+     *         name="id",
+     *         required=true,
+     *         type="integer",
+     *         format="int64"
+     *     ),
      *     @SWG\Response(
-     *         response="200", description="Returns test data",
+     *         response="200",
+     *         description="Returns test data",
+     *     ),
+     *     @SWG\Response(
+     *         response="404",
+     *         description="Thing not found",
      *     )
      * )
      *
@@ -62,6 +81,29 @@ class DefaultController extends Controller
     }
 
     /**
+     * @SWG\Post(
+     *     path="/default{id}",
+     *     description="Returns test data",
+     *     tags={"query"},
+     *     produces={"application/json"},
+     *     @SWG\Parameter(
+     *         description="ID of the thing",
+     *         in="path",
+     *         name="id",
+     *         required=true,
+     *         type="integer",
+     *         format="int64"
+     *     ),
+     *     @SWG\Response(
+     *         response="200",
+     *         description="Returns test data",
+     *     ),
+     *     @SWG\Response(
+     *         response="404",
+     *         description="Thing not found",
+     *     )
+     * )
+     *
      * @Post("/")
      * @View()
      *

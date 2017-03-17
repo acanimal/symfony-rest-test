@@ -7,9 +7,45 @@
     "paths": {
         "/default": {
             "get": {
+                "tags": [
+                    "query"
+                ],
+                "description": "Returns test data",
+                "produces": [
+                    "application/json"
+                ],
                 "responses": {
                     "200": {
                         "description": "Returns test data"
+                    }
+                }
+            }
+        },
+        "/default{id}": {
+            "get": {
+                "tags": [
+                    "query"
+                ],
+                "description": "Returns test data",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the thing",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns test data"
+                    },
+                    "404": {
+                        "description": "Thing not found"
                     }
                 }
             }
